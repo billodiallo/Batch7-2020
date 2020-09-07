@@ -1,0 +1,144 @@
+class car():
+        
+    #Attribute
+        
+    DOM = ""
+    Model = ""
+    Colour = ""
+    Price = 0
+    Wheels = ""
+    #This is different method that we want to have in our python class
+    
+    def __init__(self, UpdatePrice):
+        self.Price = UpdatePrice
+        #Whenever you define new Object for this class ,this 
+        #particular Method calls first ans define the by default
+        #Value inside the computer memory
+    
+    def __init__(self, DOM, Model, Colour, Price, Wheels) :
+        
+        self.DOM = DOM
+        self.Model = Model
+        self.Colour = Colour
+        self.Price = Price
+        self.Wheels = Wheels
+        
+        print(" we have initiated the objects")
+
+        *****************************************************************
+
+MGHectar = car("7102015","SUV","BLUE",4500000,"4+1")
+MGHectar2 = car("7102025","waz","Green",550000,"5+7")
+
+-------------------------------------------------------------------------------------------------------------------------
+ EXAMPLE 2
+class Tiger():
+    weight = 0
+    age = 0
+    breed = ""
+    legs = 0
+    gender = ""
+    
+    def __init__(self,weight,age,breed,legs,gender):
+        print("Hey Tiger Objet has been created")
+        self.weight = weight
+        self.age = age
+        self.breed = breed
+        self.legs = legs
+        self.gender = gender
+        
+    def speaks(self):
+        print("Tiger speaks - Roar")
+        print(self.age) 
+        
+    def eat(self):
+        print("Tiger Eats -Animals")
+        
+    #Peacock
+    
+    def __init__(self,weight,speak,age,breed,legs,gender):
+        self.weight = weight
+        self.age = age
+        self.breed = breed
+        self.legs = legs
+        self.gender = gender
+        
+        def speaks(self):
+            print("Tiger speaks - Roar")
+            print("Peacocks singing")
+            print(self.age) 
+          
+        def singing(self):
+            print("This peacock sings lalalallaalala")
+
+
+tiggy = Tiger(75,12,"Bengal Tiger",4,"Male")
+
+
+
+-----------------------------------------------------------
+
+#Parent class
+
+class animal():
+    weight = 0
+    age = 0
+    breed = ""
+    legs = 0
+    gender = "" 
+    
+    def __init__(self,weight,age,breed,legs,gender):
+        print("Tiger Got created")
+        self.weight = weight
+        self.age = age
+        self.breed = breed
+        self.legs = legs
+        self.gender = gender
+        
+    def age():
+        print("Age-", self.age)
+
+#comment ineritence
+
+class NewTiger(animal):
+    
+    def __init__(self,weight,age,breed,legs,gender):
+        print("Tiger Got created")
+        animal.__init__(self,weight,age,breed,legs,gender)
+        
+    def eat() :
+        print("Tiger Eats -Animals")
+
+NewtiggyNew = (45,7,"Bengoli Tiger",4,"Male")
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+

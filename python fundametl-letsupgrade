@@ -1,0 +1,122 @@
+
+###fUNCTION
+
+def someFunctionName(argument):
+
+    print("Hi",argument)
+someFunctionName("Debeek")
+lst = ["deepak","carla","het","muner","gape"]
+for item in lst:
+    someFunctionName(item)	
+
+
+***********************************
+
+file = open("fantasticFive.txt","w")
+file.write("Hi Guys are writing inside the file")
+
+file = open("fantasticFive.txt","r")
+someText = file.read()
+print(someText)
+file.close()
+
+
+file = open("fantasticFive.txt","a")
+file.write("\n\nTHis is some more data!")
+file.close()
+***************************************
+
+with open("fantasticFive.txt","w") as file:
+    someInput = input("Hey guys hope you are not sleeping there")
+    data = file.write("\n\n" +  someInput)
+    print(data)
+
+
+**********************************************
+
+def movieSuggestor(type):
+    
+    num1 = random.randint(1,5)
+    num2 = random.randint(1,5)
+    if num2 == num1:
+        num2 = random.randint(1,5)
+        
+    if typee.lower() == "anim":
+        if num == 1 or num2 ==1:
+            print("Lion King")
+            
+        if num == 2 or num2 ==2:  
+            print("Toy Story")
+        if num == 3 or num2 ==3:
+            print("Car 1 or 3")
+            
+        if  num == 4 or num2 ==4: 
+            print("Kun Fu Panda ")
+            
+        if  num == 5 or num2 ==5: 
+            print("Tarzan")
+            
+        elif typee.lower() == "romcom":
+            if num == 1 or num2 ==1:
+                print("aaawww")
+            
+        if num == 2 or num2 ==2:  
+            print("bbbbzzzz")
+        if num == 3 or num2 ==3:
+            print("wall e")
+            
+        if  num == 4 or num2 ==4: 
+            print("Herrr")
+            
+        if  num == 5 or num2 ==5: 
+            print("Kabirr")
+            
+            #comment
+            
+        elif typee.lower() == "thriller":
+            if num == 1 or num2 ==1:
+                print("adama")
+            
+        if num == 2 or num2 ==2:  
+            print("bbbb")
+        if num == 3 or num2 ==3:
+            print("ccccc")
+            
+        if  num == 4 or num2 ==4: 
+            print("dddd")
+            
+        if  num == 5 or num2 ==5: 
+            print("eeeee")  
+
+***************************************************************************************
+
+lambda exple 1
+caps = lambda word : word.capitalize()
+lst = ["hey ","i am in mombai"]
+
+newMappeList = map(lambda word : word.capitalize(), lst)
+list(newMappeList)
+*********************************************************************
+Example 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
